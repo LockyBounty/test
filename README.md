@@ -1,9 +1,2 @@
-Story
-
-Once upon 
-
-A time
-
-In the forest
-
----
+Installer le terminal de Parrot os !
+Essayer, c'est l'adopter! Bitch !
