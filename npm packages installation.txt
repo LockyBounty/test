@@ -27,14 +27,19 @@ des scripts pour rendu html avec syntaxe propre
 npm install ejs --save
 ==> pareil que pour pug, et à aussi sa propre syntaxe
 
-npm install nodemon
-==> install un server qui réactualise à chaque changement,
-attention à vérifier si compatible avec le système
+npm install --save-dev nodemon
+==> installe un server qui réactualise à chaque changement
+
+npm install cors --save
+==> sert à gerer les problemes de redondance
 
 npm install mongodb --save
 ==> installe la database mongodb en local
 
 npm install bcrypt-nodejs --save
+
+
+
 
 -----------------REACTJS - JSX
 
