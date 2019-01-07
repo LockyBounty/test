@@ -1,0 +1,53 @@
+
+
+Dans le dossier du projet, dans le terminal :
+
+npm init
+==> Cree le fichier package.json où l'on peut configurer les 
+dependances :
+    ==> dependencies : {"express":"*"} 
+
+sudo npm install -g npm@latest
+==> installe la dernière version disponible de npm
+
+npm install express
+==> installe le server Express
+
+sudo npm install -g express-generator
+
+npm install express-validator --save
+==> permet de valider les champs
+
+npm install body-parser --save
+
+npm install pug
+==> installe le module jade, dans lequel on peut develloper 
+des scripts pour rendu html avec syntaxe propre
+
+npm install ejs --save
+==> pareil que pour pug, et à aussi sa propre syntaxe
+
+npm install nodemon
+==> install un server qui réactualise à chaque changement,
+attention à vérifier si compatible avec le système
+
+npm install mongodb --save
+==> installe la database mongodb en local
+
+npm install bcrypt-nodejs --save
+
+-----------------REACTJS - JSX
+
+sudo npm install -g create-react-app
+==> installe en global l'environnement pour developper React
+
+create-react-app exemple
+==> cree un dossier "exemple" avec tous les modules nécéssaires
+au developpement de REACT
+
+
+
+
+
+
+
