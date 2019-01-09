@@ -1,8 +1,8 @@
+﻿
 
 
-# -*-coding:Utf-8 -*
 
-import os # On importe le module os qui dispose de variables 
+#import os # On importe le module os qui dispose de variables 
           # et de fonctions utiles pour dialoguer avec votre 
           # système d'exploitation
 
@@ -17,8 +17,8 @@ else:
     print("L'année saisie n'est pas bissextile.")
 
 # On met le programme en pause pour éviter qu'il ne se referme (Windows)
-#os.system("pause")
 
+#os.system("pause")
 # Programme testant si une année, saisie par l'utilisateur, est bissextile ou non
 
 
@@ -35,4 +35,6 @@ else:
 
     print("L'année saisie n'est pas bissextile.")
     
-input("Enter pour continuer")
+
+input("Appuyez Enter pour continuer, j'aime prêcher")
+
