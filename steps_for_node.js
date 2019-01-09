@@ -79,12 +79,12 @@ const Student = require('../Modele/Student') --> là où se trouve notre modele
 const studentsRoute= (app) =>{
     //const name = req.body.name//
     const {name, gender, age} = req.body //--> version plus rapide d'ecrire que la ligne en haut!
-    const student = vew Student({
+    Student.create({ //--> commande mongo 
     name,
     age,
     gender
     }) //--> asynchronous by default
-    .save()
+    
     .then((student)=>{  //--> to make it synchronous
         res.status(200).send(student)
     })
