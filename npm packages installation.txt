@@ -39,6 +39,8 @@ npm install mongodb --save
 npm install bcrypt-nodejs --save
 
 
+npm install --save express mongoose body-parser
+==> installation en une seule ligne
 
 
 -----------------REACTJS - JSX

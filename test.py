@@ -1,3 +1,8 @@
 from multipli import *
 
-table(3,20)
+
+
+def table(nombre, maximum=10):
+    print(nombre)
+
+table(maximum=15, nombre=4)
