@@ -1,8 +1,4 @@
-from multipli import *
+maListe = [1,2,3,4]
 
-
-
-def table(nombre, maximum=10):
-    print(nombre)
-
-table(maximum=15, nombre=4)
+for i, elt in enumerate(maListe):
+    print(elt)
