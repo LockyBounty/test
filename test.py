@@ -1,4 +1,7 @@
-maListe = [1,2,3,4]
+import pickle
 
-for i, elt in enumerate(maListe):
-    print(elt)
+with open('donnees', 'rb') as fichier:
+    monDepickler = pickle.Unpickler(fichier)
+
+    scoreRecup = monDepickler.load()
+    print(scoreRecup)
