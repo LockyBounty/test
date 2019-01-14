@@ -1,7 +1,6 @@
-import pickle
+list1 = [1,2,3]
+list2 = list(list1)
+list2.append(5)
+print(list1, list2)
 
-with open('donnees', 'rb') as fichier:
-    monDepickler = pickle.Unpickler(fichier)
 
-    scoreRecup = monDepickler.load()
-    print(scoreRecup)
