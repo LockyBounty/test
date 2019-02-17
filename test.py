@@ -1,20 +1,20 @@
-class Personne:
-    def __init__(self, nom, prenom):
-        self.nom = nom
-        self.prenom = prenom
-        self.age = 33
-        self._lieu = "Bruxelles"
-    def _get_lieu(self):
-        return self._lieu
-    def _set_lieu(self, new_lieu):
-        print("Nouvelle résidence :", new_lieu)
-        self._lieu = new_lieu
-    lieu = property(_get_lieu, _set_lieu)
+def intervalle(borne_inf, borne_sup):
+    """Générateur parcourant la série des entiers entre borne_inf et borne_sup.
+    Notre générateur doit pouvoir "sauter" une certaine plage de nombres
+    en fonction d'une valeur qu'on lui donne pendant le parcours. La
+    valeur qu'on lui passe est la nouvelle valeur de borne_inf.
+    
+    Note: borne_inf doit être inférieure à borne_sup"""
+    borne_inf += 1
+    while borne_inf < borne_sup:
+        valeur_recue = (yield borne_inf)
+        if valeur_recue is not None: # Notre générateur a reçu quelque chose
+            borne_inf = valeur_recue
+        borne_inf += 1
 
 
-locky = Personne("bounty", "locky")
-
-locky.lieu = "Amsterdam"
-
-#locky.lieu
-
+generateur = intervalle(10, 35)
+for nombre in generateur:
+    if nombre == 15: # On saute à 20
+        generateur.send(30)
+    print(nombre, end=" ")
