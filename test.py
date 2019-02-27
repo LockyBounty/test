@@ -1,9 +1,6 @@
-#Import library
-import json
 
-#Loading the json data as python dictionary
-#Try typing "type(data)" in terminal after executing first two line of this snippet
-data = json.load(open("data.json"))
+import getpass
+import hashlib
 
 #Function for retriving definition
 def retrive_definition(word):
@@ -18,3 +15,4 @@ while continuer == 'y':
     print(retrive_definition(word_user))
 
     continuer = input('Continue? (y / n) ')
+
