@@ -24,6 +24,18 @@ source <(curl -Ls http://git.io/vT9MS)
 
 
 ################################################################
+HIGHLIGHT YOUR FOLDERS IN A DIFFERENT COLOR WHEN USING LS (terminal) 
+
+################################################################
+
+- sudo pluma .bashrc (to open the config file in /home)
+- then add these lines at the end of the file, then save and restart the terminal:
+
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors -b)"
+alias ls='ls $LS_OPTIONS'
+
+################################################################
 MAKE AN ALIAS TO OPEN YOUR CURRENT FOLDER (terminal) IN GRAPHIC
 ################################################################
 

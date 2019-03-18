@@ -3,7 +3,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
@@ -17,7 +17,7 @@
     
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <style>#map_394c05b719a141feb0eb363c8fca4ffc {
+    <style>#map_c745881e5ab3418a9004028b5c54eeee {
         position: relative;
         width: 100.0%;
         height: 100.0%;
@@ -28,7 +28,7 @@
 </head>
 <body>    
     
-    <div class="folium-map" id="map_394c05b719a141feb0eb363c8fca4ffc" ></div>
+    <div class="folium-map" id="map_c745881e5ab3418a9004028b5c54eeee" ></div>
 </body>
 <script>    
     
@@ -36,10 +36,10 @@
         var bounds = null;
     
 
-    var map_394c05b719a141feb0eb363c8fca4ffc = L.map(
-        'map_394c05b719a141feb0eb363c8fca4ffc', {
-        center: [50.51, 4.21],
-        zoom: 8,
+    var map_c745881e5ab3418a9004028b5c54eeee = L.map(
+        'map_c745881e5ab3418a9004028b5c54eeee', {
+        center: [50.84671, 4.352519],
+        zoom: 15,
         maxBounds: bounds,
         layers: [],
         worldCopyJump: false,
@@ -49,7 +49,7 @@
 
 
     
-    var tile_layer_e647663bc3e844439759fed38b4311db = L.tileLayer(
+    var tile_layer_736c43a8f9964b92bed727b43ad43868 = L.tileLayer(
         'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         {
         "attribution": null,
@@ -61,37 +61,37 @@
         "opacity": 1,
         "subdomains": "abc",
         "tms": false
-}).addTo(map_394c05b719a141feb0eb363c8fca4ffc);
+}).addTo(map_c745881e5ab3418a9004028b5c54eeee);
     
-        var marker_0ab75707371a4846908d0a58054fa2ff = L.marker(
-            [50.51, 4.21],
+        var marker_f210cb0a8ff840058e105cd8c012615c = L.marker(
+            [50.84671, 4.352519],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(map_394c05b719a141feb0eb363c8fca4ffc);
+            ).addTo(map_c745881e5ab3418a9004028b5c54eeee);
         
     
 
-                var icon_6b03b7a10bde46bf8b192271ad9aa5ec = L.AwesomeMarkers.icon({
+                var icon_c719a68943234343a1f4cf8d4dc820de = L.AwesomeMarkers.icon({
                     icon: 'info-sign',
                     iconColor: 'white',
                     markerColor: 'orange',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_0ab75707371a4846908d0a58054fa2ff.setIcon(icon_6b03b7a10bde46bf8b192271ad9aa5ec);
+                marker_f210cb0a8ff840058e105cd8c012615c.setIcon(icon_c719a68943234343a1f4cf8d4dc820de);
             
     
-            var popup_5dacfee903344257af50a397a6a71227 = L.popup({maxWidth: '100%'
+            var popup_e753812e9c5b4ed4b3920f7e4e35667f = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_d98aeda6cca946b78a263456839a76e5 = $(`<div id="html_d98aeda6cca946b78a263456839a76e5" style="width: 100.0%; height: 100.0%;">Google HQ</div>`)[0];
-                popup_5dacfee903344257af50a397a6a71227.setContent(html_d98aeda6cca946b78a263456839a76e5);
+                var html_1ea96c31556547b092a84931d4443fdc = $(`<div id="html_1ea96c31556547b092a84931d4443fdc" style="width: 100.0%; height: 100.0%;">Grand Place de Bruxelles</div>`)[0];
+                popup_e753812e9c5b4ed4b3920f7e4e35667f.setContent(html_1ea96c31556547b092a84931d4443fdc);
             
 
-            marker_0ab75707371a4846908d0a58054fa2ff.bindPopup(popup_5dacfee903344257af50a397a6a71227)
+            marker_f210cb0a8ff840058e105cd8c012615c.bindPopup(popup_e753812e9c5b4ed4b3920f7e4e35667f)
             ;
 
             
