@@ -1,18 +1,8 @@
+#Import Library
+import folium
 
-import getpass
-import hashlib
+#Create base map
+map = folium.Map(location=[37.296933,-121.9574983], zoom_start = 8)
 
-#Function for retriving definition
-def retrive_definition(word):
-    return data[word]
-
-continuer = 'y'
-
-while continuer == 'y':
-
-    word_user = input("Enter a word: ")
-
-    print(retrive_definition(word_user))
-
-    continuer = input('Continue? (y / n) ')
-
+#Save the map
+map.save("map1.html")
