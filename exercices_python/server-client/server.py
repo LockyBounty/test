@@ -1,4 +1,3 @@
-
 import socket
 import select
 
@@ -53,4 +52,3 @@ for client in clients_connectes:
     client.close()
 
 connexion_principale.close()
-
