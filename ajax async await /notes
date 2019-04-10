@@ -1,0 +1,11 @@
+https://openclassrooms.com/en/courses/5543061-ecrivez-du-javascript-pour-le-web/5577676-gerez-du-code-asynchrone
+
+on voit ici:
+
+- les callbacks qui sont asynchrones
+- .then : promesse
+- await : pour attendre les resultats
+- async : attends les resultats pour avant de repondre a la promettre
+
+
+-> Le principe de la callback  est de la passer en paramètre d'une fonction asynchrone. Une fois que la fonction asynchrone a fini sa tâche, elle va appeler notre fonction callback en lui passant un résultat. Ainsi, le code que nous mettons dans notre fonction callback sera exécuté de manière asynchrone.
