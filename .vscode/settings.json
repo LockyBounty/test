@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "cSpell.enabledLanguageIds": [
         "asciidoc",
         "c",
@@ -26,4 +27,13 @@
         "typescriptreact",
         "yml"
     ]
+=======
+<<<<<<< HEAD
+    "terminal.integrated.shell.windows": "C:\\Windows\\system32\\cmd.exe"
+=======
+    "python.pythonPath": "venv/bin/python3",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+>>>>>>> 46aed7a552e71e6332faf7123b02a17bff789a55
+>>>>>>> 03c3b2c9afc1074bf99d129229d90e4d3e66f1ba
 }

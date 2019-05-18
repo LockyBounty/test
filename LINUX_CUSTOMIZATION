@@ -1,0 +1,48 @@
+############################################
+CUSTUMIZE LINUX TERMINAL FOR GITHUB !
+############################################
+
+Improve your Shell
+You use Linux shell every day? You make some mistyping? You like colors? Or you're just lazy?
+
+This trick will change your life!
+
+You just have to type in a single command line in your shell. Then your shell will be "patched".
+
+(no root required, just patch user's ".bashrc")
+
+Commands
+Install or update :
+
+bash <(curl -Ls http://git.io/vT9wm)
+Remove :
+
+bash <(curl -Ls http://git.io/vTdtT)
+Try just for current session : (No file will be installed on your computer)
+
+source <(curl -Ls http://git.io/vT9MS)
+
+
+################################################################
+HIGHLIGHT YOUR FOLDERS IN A DIFFERENT COLOR WHEN USING LS (terminal) 
+
+################################################################
+
+- sudo pluma .bashrc (to open the config file in /home)
+- then add these lines at the end of the file, then save and restart the terminal:
+
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors -b)"
+alias ls='ls $LS_OPTIONS'
+
+################################################################
+MAKE AN ALIAS TO OPEN YOUR CURRENT FOLDER (terminal) IN GRAPHIC
+################################################################
+
+alias f="xdg-open ."
+
+Pay attention to not put space after equal sign !
+
+
+
+
