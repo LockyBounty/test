@@ -1,3 +1,10 @@
  just copy it to this path: /home/your-username/.bashrc or ~/.bashrc
 
 https://github.com/vmizoules/ImproveYourShell
+
+
+
+To colorize folders:
+
+#Colorize folder for LS
+LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
