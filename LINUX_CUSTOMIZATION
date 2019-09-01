@@ -53,9 +53,26 @@ command:
 
 reset
 
+################################################################
+A LITTLE SCRIPT FOR AUTOMATISATION OF GIT COMMAND
+################################################################
 
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias f='xdg-open .'
+alias ff='sudo xdg-open .'
 
+function gitcommand(){
+read -r -p 'Commit message: ' desc  # prompt user for commit message
+git add .                           # track all files
+git add -u                          # track deletes
+git commit -m "$desc"               # commit with message
+git push origin master              # push to origin
 
+}
+alias gitadd='gitcommand'
 
 
 
